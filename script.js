@@ -76,11 +76,10 @@ const cvData = {
       "API testing",
     ],
     hobbies: [
-      "Běh a cyklistika",
-      "Technologie a AI",
-      "Open-source projekty",
+      "Badminton",
+      "Pub kvíz",
+      "Deskovky",
       "Cestování",
-      "Kvízy a logické úlohy",
     ],
     projects: [
       {
@@ -221,11 +220,10 @@ const cvData = {
       "API testing",
     ],
     hobbies: [
-      "Running and cycling",
-      "Technology and AI",
-      "Open-source projects",
+      "Badminton",
+      "Pub quiz",
+      "Board games",
       "Travel",
-      "Quizzes and logic challenges",
     ],
     projects: [
       {
