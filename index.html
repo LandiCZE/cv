@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Životopis</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <div class="hero-main">
+          <div>
+            <p class="eyebrow" id="label-cv">Životopis</p>
+            <h1 id="name">Jméno Příjmení</h1>
+            <p class="role" id="role">Frontend vývojář • Praha</p>
+          </div>
+          <div class="contact">
+            <p>
+              <strong id="label-email">Email:</strong> <span id="email"></span>
+            </p>
+            <p>
+              <strong id="label-phone">Telefon:</strong> <span id="phone"></span>
+            </p>
+            <p>
+              <strong id="label-linkedin">LinkedIn:</strong>
+              <a id="linkedin" href="" target="_blank" rel="noreferrer"></a>
+            </p>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img id="photo" src="" alt="" />
+        </div>
+      </header>
+
+      <div class="toolbar">
+        <div class="language-toggle" role="group" aria-label="Přepínač jazyka">
+          <button class="lang-button" data-lang="cs" type="button">CZ</button>
+          <button class="lang-button" data-lang="en" type="button">EN</button>
+        </div>
+        <p class="toolbar-note" id="toolbar-note">
+          Úpravy provedete v souboru script.js v objektu cvData.
+        </p>
+      </div>
+
+      <main>
+        <section class="section">
+          <h2 id="label-profile">Profil</h2>
+          <p id="profile"></p>
+        </section>
+
+        <section class="section">
+          <h2 id="label-linkedin-section">LinkedIn</h2>
+          <div class="highlights" id="linkedin-highlights"></div>
+        </section>
+
+        <section class="section grid">
+          <div>
+            <h2 id="label-experience">Praxe</h2>
+            <div id="experience"></div>
+          </div>
+          <div>
+            <h2 id="label-education">Vzdělání</h2>
+            <div id="education"></div>
+            <h2 id="label-skills">Dovednosti</h2>
+            <div class="skills" id="skills"></div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 id="label-hobbies">Koníčky</h2>
+          <div class="hobbies" id="hobbies"></div>
+        </section>
+
+        <section class="section">
+          <h2 id="label-projects">Projekty</h2>
+          <div id="projects"></div>
+        </section>
+
+        <section class="section">
+          <h2 id="label-languages">Jazyky</h2>
+          <div class="languages" id="languages"></div>
+        </section>
+      </main>
+    </div>
+
+    <button class="theme-toggle" id="theme-toggle" type="button">
+      Přepnout motiv
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
