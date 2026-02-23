@@ -5,7 +5,7 @@ const cvData = {
   cs: {
     labels: {
       title: "Životopis",
-      role: "Quality Assurance • Praha",
+      role: "Pardubice",
       email: "Email:",
       phone: "Telefon:",
       linkedin: "LinkedIn:",
@@ -17,6 +17,7 @@ const cvData = {
       hobbies: "Koníčky",
       projects: "Projekty",
       languages: "Jazyky",
+      toolbarNote: "Dvojjazyčný profil (CZ/EN) s přepínačem motivu.",
       themeToggleDark: "Přepnout na tmavý",
       themeToggleLight: "Přepnout na světlý",
     },
@@ -86,7 +87,7 @@ const cvData = {
         description:
           "Školní projekt v týmu 6 lidí. Vývoj backendové části aplikace LendMe v TypeScriptu, návrh struktury backendu a aplikační logiky, spolupráce s frontendem na integraci a vedení týmu.",
         bullets: [
-          "GitHub: doplň konkrétní repozitář (https://github.com/...).",
+          "GitHub: https://github.com/danbalarin/lendme",
           "Vedení týmu 6 členů: plánování práce, rozdělování úkolů a kontrola výstupů.",
           "Řešení technických i organizačních problémů během vývoje.",
           "Technologie: TypeScript, Node.js, Git (případně Express/NestJS + databáze).",
@@ -148,7 +149,7 @@ const cvData = {
   en: {
     labels: {
       title: "Curriculum Vitae",
-      role: "Quality Assurance • Prague",
+      role: "Pardubice",
       email: "Email:",
       phone: "Phone:",
       linkedin: "LinkedIn:",
@@ -160,13 +161,13 @@ const cvData = {
       hobbies: "Hobbies",
       projects: "Projects",
       languages: "Languages",
-      toolbarNote: "Update your details in script.js under the cvData object.",
+      toolbarNote: "Bilingual profile (CZ/EN) with a theme toggle.",
       themeToggleDark: "Switch to dark",
       themeToggleLight: "Switch to light",
     },
     name: "Jiri Landsmann",
     photo: {
-      src: "profile-placeholder.svg",
+      src: "profile-photo.jpg",
       alt: "Profile photo",
     },
     contact: {
@@ -230,7 +231,7 @@ const cvData = {
         description:
           "University project in a 6-member team. Built the backend part of the LendMe app in TypeScript, designed backend structure and business logic, collaborated with frontend on API integration, and led team delivery.",
         bullets: [
-          "GitHub: add the final repository URL (https://github.com/...).",
+          "GitHub: https://github.com/danbalarin/lendme",
           "Led a 6-member team: planning, task allocation, and output reviews.",
           "Solved both technical and organizational issues during development.",
           "Tech: TypeScript, Node.js, Git (optionally Express/NestJS + database).",
