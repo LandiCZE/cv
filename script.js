@@ -23,7 +23,7 @@ const cvData = {
     },
     name: "Jiří Landsmann",
     photo: {
-      src: "profile-photo.jpg",
+      src: "cv.jpg",
       alt: "Profilová fotografie",
     },
     contact: {
@@ -107,6 +107,7 @@ const cvData = {
           "Návrh simulační pipeline pro generování jemnější granularit.",
           "Vyhodnocení výsledků pomocí metrik MAE a RMSE.",
           "Technologie: Python, pandas, scikit-learn, Jupyter, Git.",
+          "GitHub: https://github.com/LandiCZE/approximation",
         ],
       },
       {
@@ -118,15 +119,7 @@ const cvData = {
           "Technologie: Python, Bash.",
         ],
       },
-      {
-        title: "Approximation",
-        description:
-          "Implementace algoritmů pro aproximaci dat, práce s datovými sadami a evaluace výsledků.",
-        bullets: [
-          "Technologie: Python, Jupyter.",
-          "GitHub: https://github.com/LandiCZE/approximation",
-        ],
-      },
+
       {
         title: "ADBcommands",
         description:
@@ -172,7 +165,7 @@ const cvData = {
     },
     name: "Jiri Landsmann",
     photo: {
-      src: "profile-photo.jpg",
+      src: "cv.jpg",
       alt: "Profile photo",
     },
     contact: {
@@ -256,6 +249,7 @@ const cvData = {
           "Designed a simulation pipeline for generating finer-grained measures.",
           "Evaluated outputs with MAE and RMSE metrics.",
           "Tech: Python, pandas, scikit-learn, Jupyter, Git.",
+          "GitHub: https://github.com/LandiCZE/approximation",
         ],
       },
       {
@@ -267,15 +261,7 @@ const cvData = {
           "Tech: Python, Bash.",
         ],
       },
-      {
-        title: "Approximation",
-        description:
-          "Implemented data approximation algorithms, worked with datasets, and evaluated results.",
-        bullets: [
-          "Tech: Python, Jupyter.",
-          "GitHub: https://github.com/LandiCZE/approximation",
-        ],
-      },
+
       {
         title: "ADBcommands",
         description:
