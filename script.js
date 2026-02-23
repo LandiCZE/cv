@@ -17,13 +17,12 @@ const cvData = {
       hobbies: "Koníčky",
       projects: "Projekty",
       languages: "Jazyky",
-      toolbarNote: "Úpravy provedete v souboru script.js v objektu cvData.",
       themeToggleDark: "Přepnout na tmavý",
       themeToggleLight: "Přepnout na světlý",
     },
     name: "Jiří Landsmann",
     photo: {
-      src: "profile-placeholder.svg",
+      src: "profile-photo.jpg",
       alt: "Profilová fotografie",
     },
     contact: {
@@ -65,18 +64,80 @@ const cvData = {
         description: "Computer Science (Bc.).",
       },
     ],
-    skills: ["QA", "Mobile devices", "Android", "Testování", "Reporting"],
-    hobbies: ["Běh", "Cyklistika", "Cestování", "Hudba", "Technologie"],
+    skills: [
+      "Quality Assurance",
+      "Test automation",
+      "Android testing",
+      "TypeScript / Node.js",
+      "Python (pandas, scikit-learn)",
+      "Git",
+      "Bash / Linux",
+      "API testing",
+    ],
+    hobbies: [
+      "Badminton",
+      "Pub kvíz",
+      "Deskovky",
+      "Cestování",
+    ],
     projects: [
       {
-        title: "Design System Kit",
+        title: "Backend Developer & Team Lead – LendMe",
         description:
-          "Sada opakovaně použitelných komponent a stylů pro interní produkty, která zrychlila vývoj o 30 %.",
+          "Školní projekt v týmu 6 lidí. Vývoj backendové části aplikace LendMe v TypeScriptu, návrh struktury backendu a aplikační logiky, spolupráce s frontendem na integraci a vedení týmu.",
+        bullets: [
+          "GitHub: doplň konkrétní repozitář (https://github.com/...).",
+          "Vedení týmu 6 členů: plánování práce, rozdělování úkolů a kontrola výstupů.",
+          "Řešení technických i organizačních problémů během vývoje.",
+          "Technologie: TypeScript, Node.js, Git (případně Express/NestJS + databáze).",
+        ],
       },
       {
-        title: "Event Planner",
+        title: "Diplomová práce – Approximation of Measures to Lower Granularities",
         description:
-          "Single-page aplikace pro plánování firemních akcí s kalendářem a automatickými notifikacemi.",
+          "Návrh a implementace vlastního algoritmu pro aproximaci agregovaných dat na nižší granularitu nad reálnými socioekonomickými daty.",
+        bullets: [
+          "Využití regresních modelů, strojového učení a clusteringu.",
+          "Návrh simulační pipeline pro generování jemnější granularit.",
+          "Vyhodnocení výsledků pomocí metrik MAE a RMSE.",
+          "Technologie: Python, pandas, scikit-learn, Jupyter, Git.",
+        ],
+      },
+      {
+        title: "Automated Quiz Registration",
+        description:
+          "Automatizace procesu přihlašování na online kvíz pomocí skriptu pro opakované úlohy a eliminaci manuální práce.",
+        bullets: [
+          "Ošetření chybových stavů a časování běhu.",
+          "Technologie: Python, Bash.",
+        ],
+      },
+      {
+        title: "Approximation",
+        description:
+          "Implementace algoritmů pro aproximaci dat, práce s datovými sadami a evaluace výsledků.",
+        bullets: [
+          "Technologie: Python, Jupyter.",
+          "GitHub: https://github.com/LandiCZE/approximation",
+        ],
+      },
+      {
+        title: "ADBcommands",
+        description:
+          "Sada shell skriptů pro automatizaci práce v terminálu.",
+        bullets: [
+          "Technologie: Bash, Linux.",
+          "GitHub: https://github.com/LandiCZE/ADBcommands",
+        ],
+      },
+      {
+        title: "Curriculum Vitae",
+        description:
+          "Vlastní online životopis hostovaný přes GitHub Pages.",
+        bullets: [
+          "Technologie: HTML, Git.",
+          "GitHub: https://github.com/LandiCZE/curriculum-vitae",
+        ],
       },
     ],
     languages: [
@@ -147,18 +208,80 @@ const cvData = {
         description: "Bachelor's degree in Computer Science.",
       },
     ],
-    skills: ["QA", "Mobile devices", "Android", "Testing", "Reporting"],
-    hobbies: ["Running", "Cycling", "Travel", "Music", "Technology"],
+    skills: [
+      "Quality Assurance",
+      "Test automation",
+      "Android testing",
+      "TypeScript / Node.js",
+      "Python (pandas, scikit-learn)",
+      "Git",
+      "Bash / Linux",
+      "API testing",
+    ],
+    hobbies: [
+      "Badminton",
+      "Pub quiz",
+      "Board games",
+      "Travel",
+    ],
     projects: [
       {
-        title: "Design System Kit",
+        title: "Backend Developer & Team Lead – LendMe",
         description:
-          "A reusable set of components and styles for internal products that sped up delivery by 30%.",
+          "University project in a 6-member team. Built the backend part of the LendMe app in TypeScript, designed backend structure and business logic, collaborated with frontend on API integration, and led team delivery.",
+        bullets: [
+          "GitHub: add the final repository URL (https://github.com/...).",
+          "Led a 6-member team: planning, task allocation, and output reviews.",
+          "Solved both technical and organizational issues during development.",
+          "Tech: TypeScript, Node.js, Git (optionally Express/NestJS + database).",
+        ],
       },
       {
-        title: "Event Planner",
+        title: "Diploma Thesis – Approximation of Measures to Lower Granularities",
         description:
-          "Single-page app for company event planning with a calendar and automated reminders.",
+          "Designed and implemented a custom algorithm for approximating aggregated data to lower granularity using real socio-economic datasets.",
+        bullets: [
+          "Used regression models, machine learning, and clustering.",
+          "Designed a simulation pipeline for generating finer-grained measures.",
+          "Evaluated outputs with MAE and RMSE metrics.",
+          "Tech: Python, pandas, scikit-learn, Jupyter, Git.",
+        ],
+      },
+      {
+        title: "Automated Quiz Registration",
+        description:
+          "Automated online quiz registration with scripting for repetitive tasks and manual work reduction.",
+        bullets: [
+          "Implemented error handling and run timing safeguards.",
+          "Tech: Python, Bash.",
+        ],
+      },
+      {
+        title: "Approximation",
+        description:
+          "Implemented data approximation algorithms, worked with datasets, and evaluated results.",
+        bullets: [
+          "Tech: Python, Jupyter.",
+          "GitHub: https://github.com/LandiCZE/approximation",
+        ],
+      },
+      {
+        title: "ADBcommands",
+        description:
+          "A shell script set for terminal workflow automation.",
+        bullets: [
+          "Tech: Bash, Linux.",
+          "GitHub: https://github.com/LandiCZE/ADBcommands",
+        ],
+      },
+      {
+        title: "Curriculum Vitae",
+        description:
+          "Personal online résumé hosted on GitHub Pages.",
+        bullets: [
+          "Tech: HTML, Git.",
+          "GitHub: https://github.com/LandiCZE/curriculum-vitae",
+        ],
       },
     ],
     languages: [
@@ -214,6 +337,17 @@ const setTheme = (theme) => {
   setThemeLabel();
 };
 
+const PHOTO_FALLBACK_SRC = "profile-placeholder.svg";
+
+const setPhoto = (photo) => {
+  elements.photo.onerror = () => {
+    if (elements.photo.src.endsWith(PHOTO_FALLBACK_SRC)) return;
+    elements.photo.src = PHOTO_FALLBACK_SRC;
+  };
+  elements.photo.src = photo.src;
+  elements.photo.alt = photo.alt;
+};
+
 const renderList = (container, items, renderItem) => {
   container.innerHTML = "";
   items.forEach((item) => {
@@ -234,8 +368,7 @@ const render = (lang) => {
   elements.labelEmail.textContent = data.labels.email;
   elements.labelPhone.textContent = data.labels.phone;
   elements.labelLinkedin.textContent = data.labels.linkedin;
-  elements.photo.src = data.photo.src;
-  elements.photo.alt = data.photo.alt;
+  setPhoto(data.photo);
   elements.email.textContent = data.contact.email;
   elements.phone.textContent = data.contact.phone;
   elements.linkedin.textContent = data.contact.linkedin.label;
@@ -317,6 +450,15 @@ const render = (lang) => {
     const description = document.createElement("p");
     description.textContent = item.description;
     wrapper.append(title, description);
+    if (item.bullets) {
+      const list = document.createElement("ul");
+      item.bullets.forEach((bullet) => {
+        const li = document.createElement("li");
+        li.textContent = bullet;
+        list.appendChild(li);
+      });
+      wrapper.appendChild(list);
+    }
     return wrapper;
   });
 
