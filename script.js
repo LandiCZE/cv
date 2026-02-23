@@ -17,7 +17,6 @@ const cvData = {
       hobbies: "Koníčky",
       projects: "Projekty",
       languages: "Jazyky",
-      toolbarNote: "Úpravy provedete v souboru script.js v objektu cvData. Fotku vložte jako profile-photo.jpg.",
       themeToggleDark: "Přepnout na tmavý",
       themeToggleLight: "Přepnout na světlý",
     },
@@ -161,13 +160,13 @@ const cvData = {
       hobbies: "Hobbies",
       projects: "Projects",
       languages: "Languages",
-      toolbarNote: "Update your details in script.js under the cvData object. Add your photo as profile-photo.jpg.",
+      toolbarNote: "Update your details in script.js under the cvData object.",
       themeToggleDark: "Switch to dark",
       themeToggleLight: "Switch to light",
     },
     name: "Jiri Landsmann",
     photo: {
-      src: "profile-photo.jpg",
+      src: "profile-placeholder.svg",
       alt: "Profile photo",
     },
     contact: {
