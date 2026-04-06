@@ -56,7 +56,7 @@ const cvData = {
       {
         title: "Vysoká škola ekonomická v Praze (VŠE)",
         period: "09/2022 – 01/2026",
-        description: "Informační technologie (Ing.).",
+        description: "Informační technologie (Ing.) — ukončeno.",
       },
       {
         title:
@@ -77,8 +77,10 @@ const cvData = {
       "Git",
       "Bash",
       "Linux",
-      "Týmová spolupráce",
-      "Řešení problémů",
+      "ADB",
+      "Testování na Androidu",
+      "Analýza dat",
+      "Návrh algoritmů",
     ],
     hobbies: [
       "Badminton",
@@ -198,7 +200,7 @@ const cvData = {
       {
         title: "Prague University of Economics and Business",
         period: "Sep 2022 – Jan 2026",
-        description: "Master's degree in Information Technology.",
+        description: "Master's degree in Information Technology — completed.",
       },
       {
         title:
@@ -219,8 +221,10 @@ const cvData = {
       "Git",
       "Bash",
       "Linux",
-      "Team Collaboration",
-      "Problem Solving",
+      "ADB",
+      "Android Testing",
+      "Data Analysis",
+      "Algorithm Design",
     ],
     hobbies: [
       "Badminton",
@@ -304,12 +308,10 @@ const elements = {
   labelExperience: document.querySelector("#label-experience"),
   labelEducation: document.querySelector("#label-education"),
   labelSkills: document.querySelector("#label-skills"),
-  labelLinkedinSection: document.querySelector("#label-linkedin-section"),
   labelHobbies: document.querySelector("#label-hobbies"),
   labelProjects: document.querySelector("#label-projects"),
   labelLanguages: document.querySelector("#label-languages"),
   profile: document.querySelector("#profile"),
-  linkedinHighlights: document.querySelector("#linkedin-highlights"),
   experience: document.querySelector("#experience"),
   education: document.querySelector("#education"),
   skills: document.querySelector("#skills"),
@@ -376,21 +378,10 @@ const render = (lang) => {
   elements.labelExperience.textContent = data.labels.experience;
   elements.labelEducation.textContent = data.labels.education;
   elements.labelSkills.textContent = data.labels.skills;
-  elements.labelLinkedinSection.textContent = data.labels.linkedinSection;
   elements.labelHobbies.textContent = data.labels.hobbies;
   elements.labelProjects.textContent = data.labels.projects;
   elements.labelLanguages.textContent = data.labels.languages;
   elements.profile.textContent = data.profile;
-
-  elements.linkedinHighlights.innerHTML = "";
-  const highlightList = document.createElement("ul");
-  highlightList.className = "highlight-list";
-  data.linkedinHighlights.forEach((highlight) => {
-    const item = document.createElement("li");
-    item.textContent = highlight;
-    highlightList.appendChild(item);
-  });
-  elements.linkedinHighlights.appendChild(highlightList);
 
   const setBulletContent = (li, bullet) => {
     const urlMatch = bullet.match(/^(GitHub:\s*)(https?:\/\/\S+)$/);
