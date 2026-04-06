@@ -5,7 +5,7 @@ const cvData = {
   cs: {
     labels: {
       title: "Životopis",
-      role: "Pardubice",
+      role: "Junior Backend Developer • Pardubice",
       email: "Email:",
       phone: "Telefon:",
       linkedin: "LinkedIn:",
@@ -147,7 +147,7 @@ const cvData = {
   en: {
     labels: {
       title: "Curriculum Vitae",
-      role: "Pardubice",
+      role: "Junior Backend Developer • Pardubice",
       email: "Email:",
       phone: "Phone:",
       linkedin: "LinkedIn:",
@@ -210,8 +210,8 @@ const cvData = {
     skills: [
       "TypeScript",
       "Node.js",
-      "Návrh API",
-      "Backend architektura",
+      "API Design",
+      "Backend Architecture",
       "Python",
       "pandas",
       "scikit-learn",
@@ -219,8 +219,8 @@ const cvData = {
       "Git",
       "Bash",
       "Linux",
-      "Týmová spolupráce",
-      "Řešení problémů",
+      "Team Collaboration",
+      "Problem Solving",
     ],
     hobbies: [
       "Badminton",
@@ -392,6 +392,21 @@ const render = (lang) => {
   });
   elements.linkedinHighlights.appendChild(highlightList);
 
+  const setBulletContent = (li, bullet) => {
+    const urlMatch = bullet.match(/^(GitHub:\s*)(https?:\/\/\S+)$/);
+    if (urlMatch) {
+      li.textContent = urlMatch[1];
+      const a = document.createElement("a");
+      a.href = urlMatch[2];
+      a.textContent = urlMatch[2];
+      a.target = "_blank";
+      a.rel = "noreferrer";
+      li.appendChild(a);
+    } else {
+      li.textContent = bullet;
+    }
+  };
+
   renderList(elements.experience, data.experience, (item) => {
     const wrapper = document.createElement("div");
     wrapper.className = "item";
@@ -404,7 +419,7 @@ const render = (lang) => {
       const list = document.createElement("ul");
       item.bullets.forEach((bullet) => {
         const li = document.createElement("li");
-        li.textContent = bullet;
+        setBulletContent(li, bullet);
         list.appendChild(li);
       });
       wrapper.appendChild(list);
@@ -451,7 +466,7 @@ const render = (lang) => {
       const list = document.createElement("ul");
       item.bullets.forEach((bullet) => {
         const li = document.createElement("li");
-        li.textContent = bullet;
+        setBulletContent(li, bullet);
         list.appendChild(li);
       });
       wrapper.appendChild(list);

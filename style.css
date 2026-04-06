@@ -190,6 +190,15 @@ body {
   color: var(--muted);
 }
 
+.item ul a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.item ul a:hover {
+  text-decoration: underline;
+}
+
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -265,13 +274,22 @@ body {
   }
 
   .hero {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: flex-start;
   }
 
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+
   .hero-photo img {
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .contact {
+    min-width: 0;
+    width: 100%;
   }
 
   .toolbar {
